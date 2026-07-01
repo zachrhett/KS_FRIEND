@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>F.R.I.E.N.D.</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html,body{
+
+background:#111;
+font-family:Arial,Helvetica,sans-serif;
+width:100%;
+height:100%;
+
+}
+
+body{
+
+display:flex;
+justify-content:center;
+align-items:flex-start;
+overflow:auto;
+
+}
+
+#app{
+
+position:relative;
+width:100%;
+max-width:1024px;
+
+}
+
+#homeImage{
+
+width:100%;
+display:block;
+user-select:none;
+-webkit-user-drag:none;
+
+}
+
+.hotspot{
+
+position:absolute;
+
+cursor:pointer;
+
+background:rgba(255,255,255,0);
+
+transition:.20s;
+
+border-radius:14px;
+
+}
+
+.hotspot:hover{
+
+background:rgba(0,120,255,.20);
+
+outline:2px solid rgba(0,120,255,.45);
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="app">
+
+<img
+id="homeImage"
+src="friend-home.png"
+alt="F.R.I.E.N.D. Home Screen">
+
+<!-- TOP -->
+
+<a class="hotspot"
+href="alerts.html"
+style="
+left:76%;
+top:7.4%;
+width:7%;
+height:6%;
+"></a>
+
+<a class="hotspot"
+href="profile.html"
+style="
+left:85%;
+top:7.4%;
+width:8%;
+height:6%;
+"></a>
+
+<a class="hotspot"
+href="index.html"
+style="
+left:48%;
+top:13%;
+width:5%;
+height:4%;
+"></a>
+
+<!-- BLUE PANEL -->
+
+<a class="hotspot"
+href="store-composite.html"
+style="
+left:10%;
+top:43%;
+width:80%;
+height:5%;
+"></a>
